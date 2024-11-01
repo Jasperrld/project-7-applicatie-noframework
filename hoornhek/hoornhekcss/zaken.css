@@ -1,0 +1,86 @@
+.zaken-new-container {
+    background: rgb(241, 177, 37);
+    background: linear-gradient(90deg, rgba(241, 177, 37, 1) 0%, rgba(241, 112, 37, 1) 37%, rgba(159, 46, 18, 1) 100%);
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.zaken-new-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.zaken-new-form label {
+    margin-bottom: 5px;
+}
+
+.zaken-new-form textarea {
+    height: 100px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.zaken-new-form input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.zaken-new-form input[type="submit"] {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Style for select2 dropdown */
+.select2-container {
+    width: 100% !important;
+}
+
+
+
+/*ZAAK INFO CSS*/
+
+.zaak-info,
+.arrestant-info {
+    max-width: 600px;
+    /* Set maximum width for the container */
+    margin: 20px auto;
+    /* Center the container horizontally with some margin */
+    padding: 20px;
+    background-color: #f1b125;
+    /* Background color */
+    border-radius: 10px;
+}
+
+.zaak-info h2,
+.arrestant-info h2 {
+    text-align: center;
+    /* Center the heading */
+    margin-bottom: 10px;
+    /* Add space below the heading */
+}
+
+.zaak-details p,
+.arrestant-info ul {
+    padding-left: 20px;
+    /* Indent details */
+}
+
+.zaak-details p strong {
+    margin-right: 5px;
+    /* Add space between strong text and details */
+    font-weight: bold;
+    /* Make the strong text bold */
+}

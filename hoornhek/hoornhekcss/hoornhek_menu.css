@@ -1,0 +1,179 @@
+.logo {
+    position: absolute;
+    left: 10px;
+    /* Adjust the distance from the left */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    /* Adjust the height as needed */
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+    background: rgb(241, 177, 37);
+    background: linear-gradient(90deg, rgba(241, 177, 37, 1) 0%, rgba(241, 112, 37, 1) 37%, rgba(159, 46, 18, 1) 100%);
+    width: 100%;
+    z-index: 999;
+}
+
+.menu-toggle,
+.hoornhek_menu-toggle {
+    display: none;
+    position: absolute;
+    /* Position the toggle button */
+    right: 10px;
+    /* Adjust the distance from the right */
+    top: 50%;
+    /* Align vertically in the middle */
+    transform: translateY(-50%);
+}
+
+.hoornhek_menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hoornhek_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hoornhek_menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.hoornhek_menu li:last-child {
+    margin-right: 0;
+}
+
+.hoornhek_menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.hoornhek_menu a:hover {
+    background-color: #f2f2f2;
+}
+
+/* Locatie Header */
+.locatie_header {
+    position: sticky;
+    top: 35px;
+    padding: 10px 0;
+    background-color: rgba(208, 219, 245, 1);
+    /* Change the background color to grey */
+    width: 100%;
+    border-bottom: rgb(152, 178, 241) 1px solid;
+}
+
+/* Locatie Menu */
+.locatie_menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.locatie_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.locatie_menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.locatie_menu li:last-child {
+    margin-right: 0;
+}
+
+.locatie_menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.locatie_menu a:hover {
+    background-color: #f2f2f2;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 640px) {
+
+    .menu-toggle,
+    .hoornhek_menu-toggle {
+        display: block;
+    }
+
+    .hoornhek_menu,
+    .locatie_menu {
+        height: 18px;
+    }
+
+    .hoornhek_menu ul,
+    .locatie_menu ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(208, 219, 245, 1);
+        border: 1px solid #0a6e0c;
+        border-radius: 5px;
+    }
+
+    .hoornhek_menu ul.active,
+    .locatie_menu ul.active {
+        display: flex;
+    }
+
+    .hoornhek_menu li,
+    .locatie_menu li {
+        display: block;
+        margin: 0;
+        padding: 10px 20px;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+
+.icon-container {
+    display: inline-block;
+    /* Ensures that the container only takes up the space necessary for its content */
+    background: rgb(241, 177, 37);
+    background: linear-gradient(90deg, rgba(241, 177, 37, 1) 0%, rgba(241, 112, 37, 1) 37%, rgba(159, 46, 18, 1) 100%);
+    /* Set the background color to green */
+    padding: 5px;
+    /* Optional: Add padding for spacing around the icon */
+}
+
+
+.icon-container-locatie {
+    display: inline-block;
+    /* Ensures that the container only takes up the space necessary for its content */
+    background-color: rgba(208, 219, 245, 1);
+
+    /* Set the background color to green */
+    padding: 5px;
+    /* Optional: Add padding for spacing around the icon */
+}
+
+.fa-sharp.fa-solid.fa-bars {
+    /* Your styles for the icon here */
+    font-size: 24px;
+    /* Adjust the font size as needed */
+    color: #fff;
+    /* Adjust the color of the icon to contrast with the background */
+}

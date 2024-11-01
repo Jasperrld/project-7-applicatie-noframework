@@ -1,0 +1,29 @@
+.detentiehistorie-info {
+    max-width: 600px;
+    /* Set maximum width for the container */
+    margin: 20px auto;
+    /* Center the container horizontally with some margin */
+    padding: 20px;
+    background-color: #f1b125;
+    /* Background color */
+    border-radius: 10px;
+}
+
+.detentiehistorie-info h2 {
+    text-align: center;
+    /* Center the heading */
+    margin-bottom: 10px;
+    /* Add space below the heading */
+}
+
+.detentiehistorie-details p {
+    padding-left: 20px;
+    /* Indent details */
+}
+
+.detentiehistorie-details p strong {
+    margin-right: 5px;
+    /* Add space between strong text and details */
+    font-weight: bold;
+    /* Make the strong text bold */
+}

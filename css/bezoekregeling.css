@@ -1,0 +1,38 @@
+.bezoekregeling-blok2 {
+    height: 80px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(231, 226, 226, 1) 43%, rgba(155, 155, 155, 1) 100%);
+}
+
+.bezoekregeling-blok1 {
+    display: flex;
+    width: 100%;
+}
+
+.bezoekregeling-text1 {
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 50%;
+}
+
+.bezoekregeling-foto {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.bezoekregeling-foto img {
+    margin-right: 10%;
+    max-width: 80%;
+    /* Ensure image doesn't exceed its container */
+    max-height: 80%;
+    /* Ensure image doesn't exceed its container */
+    width: auto;
+    /* Maintain aspect ratio */
+    max-width: 80%;
+    /* Set maximum width to maintain responsiveness */
+}
+
+.bezoekregeling-blok3 {}

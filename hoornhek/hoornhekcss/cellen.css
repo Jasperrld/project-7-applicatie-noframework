@@ -1,0 +1,58 @@
+.cellen-container {
+    display: flex;
+}
+
+.cel {
+    background-color: greenyellow;
+    padding: 10px;
+}
+
+.cel-red {
+    background-color: red;
+    /* Change this to the desired color */
+    color: white;
+    /* Change text color if necessary */
+}
+
+/* Style for the container */
+.cel-info-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1b125;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-link {
+    text-decoration: none;
+    /* Remove default underline */
+}
+
+.edit-button {
+    background-color: #4CAF50;
+    /* Green background color */
+    border: none;
+    /* Remove border */
+    color: white;
+    /* White text color */
+    padding: 10px 20px;
+    /* Add padding */
+    text-align: center;
+    /* Center text */
+    display: inline-block;
+    /* Make it inline-block */
+    font-size: 16px;
+    /* Font size */
+    cursor: pointer;
+    /* Add cursor pointer on hover */
+    border-radius: 5px;
+    /* Add border radius */
+    transition: background-color 0.3s ease;
+    /* Smooth background color transition */
+}
+
+.edit-button:hover {
+    background-color: #45a049;
+    /* Darker green color on hover */
+}

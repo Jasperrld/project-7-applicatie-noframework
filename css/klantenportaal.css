@@ -1,0 +1,190 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    /* Stack .blok divs vertically */
+    width: 100%;
+    min-height: 100vh;
+    justify-content: flex-start;
+    /* Center vertically */
+    align-items: center;
+    /* Center horizontally */
+    /* Ensure the wrapper takes at least the height of the viewport */
+}
+
+/* begin van blok 1 om de foto's naast elkaar te hebben full width*/
+
+.blok1 {
+    display: flex;
+    width: 100%;
+    margin-bottom: -12%;
+}
+
+.blok1 .div1,
+.blok1 .div2 {
+    flex: 1;
+    /* Each div takes up equal space */
+}
+
+.blok1 img {
+    width: 100%;
+    height: 70%;
+    opacity: 0.7;
+    /* Make the images fill the width of their containers */
+    /* Maintain aspect ratio */
+}
+
+/*einde blok 1*/
+
+.blok2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    margin-bottom: 10px;
+
+}
+
+.blok2 .div3 {
+    text-align: center;
+    /* Center the text horizontally */
+}
+
+.blok2 .div3 h1 {
+    margin: 0;
+    /* Remove any default margin */
+}
+
+
+/* hier komt alles van blok 3 de 2 foto's en text*/
+
+.blok3 {
+    display: flex;
+    max-width: 80%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.blok3 .div4 {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.blok3 .div5 {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.blok3 .div4 img {
+    width: 80%;
+    max-width: 50%;
+    height: auto;
+}
+
+.blok3 .div5 img {
+    margin-top: 10%;
+    width: 70%;
+    max-width: 40%;
+    height: auto;
+}
+
+.div4 img {
+    margin-left: 20%;
+}
+
+.div5 img {
+    margin-right: 20%;
+}
+
+
+.text1 {
+    align-self: flex-end;
+    margin-top: 10%;
+    margin-right: 10px;
+}
+
+.text2 {
+    align-self: flex-start;
+    margin-top: 10%;
+    margin-left: 10px;
+}
+
+/*einde blok 3*/
+
+
+.blok2 {
+    background-color: #F7F6F6;
+}
+
+.blok5 {
+    background-color: #CFCFCF;
+}
+
+.blok5 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    max-width: 80%;
+    background-color: #CFCFCF;
+}
+
+.div8 {
+    position: relative;
+    /* Ensure relative positioning for absolute children */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+}
+
+.div8 img {
+    width: 70%;
+    height: auto;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+#image2 {
+    position: absolute;
+    /* Set position to absolute */
+    width: 70%;
+    /* Set width to match image1 */
+    height: auto;
+    /* Automatically adjust height based on width */
+}
+
+
+/* Ensure images inside .blok divs do not stretch beyond their original size */
+.blok5 img {
+    max-width: 100%;
+    height: 100%;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .blok5 {
+        flex-direction: column;
+        /* Stack child divs vertically on smaller screens */
+        align-items: center;
+        /* Center child divs vertically */
+    }
+
+    /* Adjust image size for smaller screens */
+    .blok5 img {
+        max-width: 100%;
+    }
+
+    /* Adjust text size for smaller screens */
+    .blok5 .div9 {
+        font-size: 14px;
+        /* Adjust font size as needed */
+    }
+}

@@ -1,0 +1,170 @@
+.hoornhek_body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* CSS for grid layout and responsiveness */
+.arrestanten_container {
+    overflow-x: auto;
+    /* Enable horizontal scrolling on smaller screens */
+}
+
+/* CSS for making the table smaller */
+#customers {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#customers th,
+#customers td {
+    padding: 6px;
+    /* Reduce padding */
+    border: 1px solid #ddd;
+    font-size: 12px;
+    /* Reduce font size */
+    word-break: break-word;
+    /* Allow long words to break and wrap */
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Apply responsive styles for smaller screens */
+    .arrestanten_container {
+        overflow-x: auto;
+        /* Enable horizontal scrolling */
+    }
+
+    #customers th,
+    #customers td {
+        padding: 4px;
+        /* Further reduce padding for smaller screens */
+        font-size: 10px;
+        /* Further reduce font size for smaller screens */
+    }
+}
+
+/* Pagination styles */
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+    /* Add some spacing between pagination links */
+}
+
+.pagination a.curPage {
+    background-color: var(--primary0);
+    color: rgb(255, 43, 43);
+    border-color: var(--primary0);
+}
+
+.pagination a:hover:not(.curPage) {
+    background-color: var(--hover);
+}
+
+
+
+.btn-edit {
+    /*TODO: icons verzamelen... */
+    color: green;
+}
+
+.btn-delete {
+    /*TODO: icons verzamelen... */
+    color: red;
+}
+
+.btn-info {
+    /*TODO: icons verzamelen... */
+    color: aqua;
+}
+
+.head {
+    background-color: rgba(208, 219, 245, 1);
+}
+
+
+/* LocationPagination styles */
+.location-pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.location-pagination a {
+    display: inline-block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+    /* Add some spacing between pagination links */
+}
+
+.location-pagination a.curPage {
+    background-color: var(--primary0);
+    color: rgb(255, 43, 43);
+    border-color: var(--primary0);
+}
+
+.location-pagination a:hover:not(.curPage) {
+    background-color: var(--hover);
+}
+
+
+
+.zoekbalk {
+    display: flex;
+    align-items: center;
+}
+
+.zoekbalk label {
+    margin-right: 10px;
+}
+
+.zoekbalk input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.zoekbalk .filterbutton {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.zoekbalk .filterbutton:hover {
+    background-color: #0056b3;
+}
+
+.Terug {
+    background-color: #2cde3b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Terug:hover {
+    background-color: #86f43d;
+}
+
+.Terug a {
+    color: #ddd;
+    text-decoration: none;
+}

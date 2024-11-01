@@ -1,0 +1,47 @@
+.complex-container {
+    display: flex;
+    flex-direction: column;
+    /* Stack .blok divs vertically */
+    width: 100%;
+    min-height: 100vh;
+    justify-content: flex-start;
+
+}
+
+.complex-blok1 {
+    margin-left: 7%;
+    width: 60%;
+}
+
+.complex-blok2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.complex-blok2 img {
+    max-width: 30%;
+}
+
+.complex-img1 {
+    margin-left: 2%;
+}
+
+.complex-img3 {
+    margin-right: 2%;
+}
+
+.complex-blok3 {
+    margin-left: 7%;
+
+    width: 60%;
+}
+
+.complex-blok4 {
+    text-align: center;
+}
+
+.complex-blok4 h3 {
+    color: orange;
+}

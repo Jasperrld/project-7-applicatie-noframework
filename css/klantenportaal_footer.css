@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.klantenportaal_footer {
+    background: rgb(241, 177, 37);
+    background: linear-gradient(90deg, rgba(241, 177, 37, 1) 0%, rgba(241, 112, 37, 1) 37%, rgba(159, 46, 18, 1) 100%);
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
+    /* Center items vertically */
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    margin-right: auto;
+    /* Pushes the logo all the way to the left */
+    margin-left: 10px;
+    /* Additional margin to ensure some space from the left edge */
+}
+
+.footer-img {
+    width: 50px;
+    height: auto;
+}
+
+.contact-info {
+    text-align: center;
+}

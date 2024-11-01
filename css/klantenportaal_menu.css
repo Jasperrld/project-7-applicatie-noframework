@@ -1,0 +1,125 @@
+.logo {
+    position: absolute;
+    left: 10px;
+    /* Adjust the distance from the left */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    /* Adjust the height as needed */
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+    background: rgb(241, 177, 37);
+    background: linear-gradient(90deg, rgba(241, 177, 37, 1) 0%, rgba(241, 112, 37, 1) 37%, rgba(159, 46, 18, 1) 100%);
+    width: 100%;
+    z-index: 999;
+}
+
+.menu-toggle {
+    display: none;
+    position: absolute;
+    /* Position the toggle button */
+    right: 10px;
+    /* Adjust the distance from the right */
+    top: 50%;
+    /* Align vertically in the middle */
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Styles for the button icon */
+.menu-toggle .icon-container {
+    display: inline-block;
+    background: none;
+    padding: 5px;
+}
+
+.menu-toggle .icon-container i {
+    font-size: 24px;
+    background: rgb(241, 177, 37);
+    background: linear-gradient(90deg, rgba(241, 177, 37, 1) 0%, rgba(241, 112, 37, 1) 37%, rgba(159, 46, 18, 1) 100%);
+}
+
+/* Styles for the button icon on hover */
+.menu-toggle:hover .icon-container i {
+    color: #f2f2f2;
+    /* Change color on hover */
+}
+
+.klantenportaal_menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.klantenportaal_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.klantenportaal_menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.klantenportaal_menu li:last-child {
+    margin-right: 0;
+}
+
+.klantenportaal_menu li.active a {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+
+
+
+.klantenportaal_menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.klantenportaal_menu a:hover {
+    background-color: #f2f2f2;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 640px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .klantenportaal_menu {
+        height: 18px;
+    }
+
+    .klantenportaal_menu ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #0a6e0c;
+        border-radius: 5px;
+    }
+
+    .klantenportaal_menu ul.active {
+        display: flex;
+    }
+
+    .klantenportaal_menu li {
+        display: block;
+        margin: 0;
+        padding: 10px 20px;
+        border-bottom: 1px solid #ccc;
+    }
+}
